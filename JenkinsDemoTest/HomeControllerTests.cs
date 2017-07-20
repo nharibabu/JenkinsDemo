@@ -20,7 +20,7 @@ namespace JenkinsDemoTest
         {
             HomeController ctrl = new HomeController();
             int sub = ctrl.Subtract(2, 1);
-            Assert.AreEqual(2, sub);
+            Assert.AreEqual(1, sub);
         }
     }
 }
