@@ -63,7 +63,6 @@
       <Name>JenkinsDemo</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Lib\nunit.framework.dll" />
   </ItemGroup>
