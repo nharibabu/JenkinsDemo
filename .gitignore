@@ -3,3 +3,7 @@
 ################################################################################
 
 /JenkinsDemo/bin
+/.vs
+/JenkinsDemo/obj
+/JenkinsDemoTest/obj
+/JenkinsDemo/JenkinsDemo.csproj.user
