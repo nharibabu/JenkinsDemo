@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Web;
+using System.Reflection;
 using System.Web.Mvc;
 
 namespace JenkinsDemo.Controllers
@@ -11,9 +8,8 @@ namespace JenkinsDemo.Controllers
 	{
 		public ActionResult Index()
 		{
-			string s = Server.MapPath("~");
-			DirectoryInfo info = new DirectoryInfo(s);
-			ViewBag.Title = string.Format("Home Page - {0} - {1}", info.LastWriteTimeUtc.ToLongDateString(), info.LastWriteTimeUtc.ToLongTimeString());
+			DateTime ceationTime = System.IO.File.GetCreationTime(Assembly.GetExecutingAssembly().Location);
+			ViewBag.Title = string.Format("Home Page - {0}:{1}", ceationTime.ToLongDateString(), ceationTime.ToLongTimeString());
 			return View();
 		}
 
