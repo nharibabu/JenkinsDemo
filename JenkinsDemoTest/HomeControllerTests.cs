@@ -10,6 +10,7 @@ namespace JenkinsDemoTest
         [Test]
         public void AddTest()
         {
+            // Add Test 
             HomeController ctrl = new HomeController();
             int sum = ctrl.Add(1, 2);
             Assert.AreEqual(3, sum);
